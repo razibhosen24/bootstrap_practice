@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap demo 2</title>
+    <!-- fonts -->
+    <!-- icon -->
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/pg1.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="text/x-icon" href="../images/icon.png">
+  </head>
+
+  <body>
+    <!-- header start -->
+  <header>
+
+    <nav class="navbar bg-primary c_n">
+      <div class="container-fluid">
+
+        <!-- logo start -->
+        <a href="../index.html" class="m-0">Bootstrap</a>
+        <!-- logo end -->
+
+        <!-- menu start -->
+        <div class="menu">
+          <ul class="m-0">
+            <li><a href="#" class="mx-sm-2">Form & Validation</a></li>
+            <li><a href="pg2.html" class="mx-sm-2">Flex,Utilities & icon</a></li>
+            <li><a href="pg3.html" class="mx-sm-2">Content</a></li>  
+          </ul>
+        </div>
+        <!-- menu end -->
+      </div>
+    </nav>
+  </header>
+    <!-- header end -->
+
+    <!-- form start -->
+    <div class="container-fluid b_border bg-secondary-subtle">
+       <form class="needs-validation" novalidate>
+        <!-- full name start -->
+        <div class="my-3 container">
+        <div class="row r_h gx-5">
+          <div class="col-xs-6 col-md-3">
+            <label for="first name" class="form-email mb-2">First Name</label>
+            <input type="text" name="first name" placeholder="Type your first name" class="form-control" id="first name" required>
+          </div>
+
+          <div class="col-xs-2 col-md-3">
+            <label for="middle name" class="form-email mb-2">Middle Name</label>
+           <input type="text" name="middle name" placeholder="Type your middle name" class="form-control" id="middle name" disabled>
+          </div>
+
+          <div class="col">
+            <label for="last name" class="form-email mb-2">Last Name</label>
+           <input type="text" name="last name" placeholder="Type your last name" class="form-control" id="last name" required>
+          </div>
+
+          <div class="col">
+           <label for="date" class="form-email mb-2">Birth Date</label>
+           <input type="date" name="last name" class="form-control" id="date" required>
+          </div>
+        </div>
+        </div>
+        <!-- full name end -->
+
+        <!-- country start -->
+        <div class="my-3 container">
+        <div class="row r_h gx-5">
+          <!-- country -->
+          <div class="col-auto">
+            <label for="country" class="form-email mb-2">Country</label>
+           <input type="text" name="country" placeholder="Bangladesh" class="form-control" id="country" readonly>
+          </div>
+          <!-- country -->
+          <!-- city -->
+          <div class="col-auto">
+            <label for="city" class="form-email mb-2">City</label>
+            <select class="form-select" aria-label="city" required>
+              <option selected>Choose your city name</option>
+              <option value="1">Dhaka</option>
+              <option value="2">Khulna</option>
+              <option value="3">Bagerhat</option>
+            </select>
+          </div>
+          <!-- city -->
+          <!-- gender -->
+          <div class="col-auto g-h-m">
+            <label class="form-email mb-2">Gender : </label>
+
+            <div class="form-check form-check-inline me-0">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="option1">
+                <label class="form-check-label" for="male">Male <i class="bi bi-gender-male"></i></label>
+            </div>
+
+            <div class="form-check form-check-inline me-0">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="option2">
+                <label class="form-check-label" for="female">Female <i class="bi bi-gender-female"></i></label>
+            </div>
+
+            <div class="form-check form-check-inline me-0">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="other" value="option3">
+                <label class="form-check-label" for="other">Other</label>
+            </div>
+
+          </div>
+          <!-- gender -->
+        </div>
+
+        <!-- area,road,zip start -->
+        <div class="row g-3 r_h mt-2">
+          <div class="col-6">
+            <input type="text" class="form-control" placeholder="Select Area Name" aria-label="aria" list="datalistOptions" required>
+            <datalist id="datalistOptions">
+              <option value="Abdullahpur">
+              <option value="Banani">
+              <option value="Mirpur">
+              <option value="Pallabi">
+              <option value="Uttara">
+            </datalist>
+          </div>
+          <div class="col-3"><input type="text" class="form-control" placeholder="Rode No." aria-label="Rode No." required></div>
+          <div class="col-3"><input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip" required></div>
+        </div>
+        <!-- area,road,zip start -->
+
+        </div>
+        <!-- country end -->
+
+        <!-- email start -->
+         <div class="my-3 container">
+           <label for="email1" class="form-email mb-2"><i class="bi bi-envelope-at"></i> Email Adress</label>
+           <input type="email" name="email1" placeholder="Type your email adress" class="form-control" id="email1" required>
+         </div>
+         <!-- email end -->
+
+         <!-- pass start -->
+         <div class="my-3 container">
+           <label for="password1" class="form-email mb-2"><i class="bi bi-shield-lock"></i> Password</label>
+           <input type="password" name="password1" placeholder="Enter your password" class="form-control password" id="password1" required>
+         </div>
+         <!-- pass end -->
+
+
+        <!-- social start -->
+         <div class="my-3 container">
+           <div class="form-floating mb-3">
+             <input type="text" class="form-control" id="f-link" placeholder="your facebook link" required>
+             <label for="f-link">Facebook Link</label>
+           </div>
+         </div>
+         <!-- social end -->
+
+         <!-- About start -->
+         <div class="my-3 container">
+           <label for="about" class="form-label about"><i class="bi bi-person"></i> About</label>
+           <textarea class="form-control about" id="about" rows="3" placeholder="Type yourself in 120-150 words" required></textarea>
+         </div>
+         <!-- About end -->
+
+         <!-- upload start -->
+         <div class="my-3 container">
+           <label for="file" class="form-label file"><i class="bi bi-folder2-open"></i> Upload Your All Files And Documentation</label>
+           <input class="form-control file" type="file" id="file" multiple required>
+         </div>
+         <!-- upload end -->
+
+         <!-- check-b start -->
+         <div class="my-3 container form-check">
+           <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox" required>
+           <label class="form-check-label" for="checkbox">I agree to the <a href="#">terms and conditions</a> and the privacy policy <a href="#"><i class="bi bi-file-earmark-text"></i></a></label>
+         </div>
+         <!-- check-b end -->
+
+         <!-- button start -->
+         <div class="my-3 container">
+          <button type="submit" class="btn btn-primary">Submit</button>
+         </div>
+         <!-- button end -->
+
+
+
+
+
+
+
+
+
+
+
+       </form>
+    </div>
+    <!-- form end -->
+
+
+
+
+
+
+
+
+
+
+    <!-- js link -->
+    <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

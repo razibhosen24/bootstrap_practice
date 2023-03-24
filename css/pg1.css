@@ -1,0 +1,25 @@
+body{
+	background: #F8F9FA;
+}
+
+
+.b_border{
+	height: 100%;
+}
+
+.menu ul li:first-child a{
+	border-bottom: 1px solid white;
+}
+
+.form-check{
+	padding-left: 2.5rem;
+}
+
+.r_h{
+	min-height: 20px;
+}
+
+.g-h-m{
+	height: 20px;
+    margin-top: 3.2%;
+}

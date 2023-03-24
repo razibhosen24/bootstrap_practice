@@ -1,0 +1,38 @@
+.b_border{
+	height: 150px;
+}
+
+.b_border2{
+	height: 320px;
+}
+
+.b_border3{
+	height: 390px;
+}
+
+.b_border4{
+	height: 520px;
+}
+
+.menu ul li:nth-child(2) a{
+	border-bottom: 1px solid white;
+}
+
+
+.bg-purple{
+	background: #EAE0FE;
+	border: 1px solid #4c0bce;
+}
+
+.bg-h-purple{
+	background: #B799FF;
+	border: 1px solid #9E84EF;
+}
+
+.sbox-h{
+	height: 100px;
+}
+
+/*.i-h{
+	height: 42px;
+}*/
